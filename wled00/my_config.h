@@ -31,3 +31,4 @@
 #define SERVERNAME "GLORB"
 #define WLED_AP_SSID "GLORB-AP"
 #define WLED_AP_PASS "glorb1234"
+#define GLORB_LEDMAP_81

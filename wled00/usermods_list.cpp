@@ -207,6 +207,10 @@
 #include "../usermods/usermod_v2_auto_playlist/usermod_v2_auto_playlist.h"
 #endif
 
+#ifdef USERMOD_GLORB
+#include "../usermods/GLORB/usermod_glorb.h"
+#endif
+
 void registerUsermods()
 {
   /*
@@ -409,5 +413,8 @@ void registerUsermods()
   usermods.add(new AutoPlaylistUsermod(false));
 #endif
 
+#ifdef USERMOD_GLORB
+  usermods.add(new UsermodGlorb());
+#endif
 
 }
